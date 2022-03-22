@@ -1,2 +1,2 @@
-# Porfolio
-Bienvenue sur mon portfolio en ligne !
+# Portfolio
+ Bienvenue sur mon portfolio en ligne !

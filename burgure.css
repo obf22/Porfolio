@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+p{
+    line-height: 26px;
+    text-align: justify;
+    margin-top: 15px;
+    padding: 5px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.548);
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #6f6f6f;
+    top: 0;
+    z-index: 5;
+}
+nav h1{
+    color: #717171;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+}
+.onglets{
+    margin-top: 3px;
+    margin-left: 350px;
+}
+.onglets a{
+    color: black;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+header{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./media/man-header.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+    margin-top: 40px;
+}
+header h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+    margin: -10px 0 20px 0;
+}
+header h4{
+    font-family: 'Playfair Display', sans-serif;
+    margin: -20px 0 20px 0;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+header button{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.63);
+    border-radius: 20px;
+}
+header button:hover{
+    letter-spacing: 1px;
+    transition: 500ms ease-in-out;
+    background: rgb(255, 255, 255);
+    color: black;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-left{
+    position: relative;
+    display: flex;
+    flex-wrap:nowrap;
+    margin: 40px 0 0 0;
+}
+.content-left::after, .content-rigth::after {
+    content: '';
+    border: 1px solid #6f6f6f3a;
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+}
+/* .img-left, .img-rigth{
+    flex: 0 0 70%; 
+} */
+.text{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color:black;
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    height: 200px;
+}
+.content-rigth{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    margin:0;
+}
+.main img{
+    height: 300px;
+    width: 500px;
+    margin-top: 5px;
+}
+footer{
+    margin-top: 40px;
+    border-top: 3px solid #6f6f6f;
+    background-color: black;
+    color: #fff;
+    padding: 30px 50px;
+    width: 100%; 
+}
+footer h1{
+    font-family: 'Playfair Display', sans-serif;
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+footer h3{
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 15px;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service{
+    max-width: 200px;
+    margin-bottom: 40px;
+}
+.service p{
+    font-size: 14px;
+}
+#contact{
+    color: rgb(181, 181, 181);
+}
+
+
+
+@media screen and (max-width:720px){
+    .onglets{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    nav{
+        background: rgb(255, 255, 255);
+        flex-direction: column;
+    }
+    p{
+        margin-top: 15px;
+        padding: 5px;
+        
+    }
+    header{
+        margin-top: 80px;
+    }
+    header h1{
+        font-size: 40px;
+    }
+    header h4{
+        margin: -10px 0 20px 0;
+        font-size: 17px;
+    }
+    header button{
+        font-size: 12px;
+    }
+    .main{
+        overflow: hidden;
+        display: block;
+    }
+    ::after{
+        display: none;
+    }
+    .img-left{
+        order: 2;
+    }
+    .content-rigth{
+        margin-top: 20px;
+    }
+    .main img{
+        margin-bottom:10px;
+        width: 600px;
+        
+    }
+    .content-left .text{
+        order: 1;
+    }
+    .content-left, .content-rigth{
+        flex-direction: column;
+    }
+    .text{
+        flex:100%;
+        margin-top:0;
+        width: fit-content;
+    } 
+    footer h1{
+        width: fit-content;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    .service{
+        justify-content: center;
+        align-items: center;
+        max-width: 400px;
+    }
+    #contact{
+        font-size: 12px;
+    }
+
+
+}
+    
+    
